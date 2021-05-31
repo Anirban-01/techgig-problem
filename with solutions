@@ -1,0 +1,31 @@
+"""Greatest Of 3 (100 Marks)
+You just need to take three number as input from stdin and you need to find greatest of them.
+
+Input Format
+You will be taking three numbers as an input from stdin one on each line respectively.
+
+Constraints
+-100000 <= N <= 100000
+
+Output Format
+You need to print the greatest of the three numbers to the stdout."""
+
+import sys
+
+
+def main():
+    # Write code here
+    s = sys.stdin.read()
+    s = s.split("\n")
+    a = int(s[0])
+    b = int(s[1])
+    c = int(s[2])
+    greater_number = 0
+    e = [a, b, c]
+    for i in e:
+        if i > greater_number:
+            greater_number = i
+            print(greater_number)
+
+
+main()
